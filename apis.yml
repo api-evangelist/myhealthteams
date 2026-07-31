@@ -1,7 +1,28 @@
 aid: myhealthteams
-name: MyHealthTeams
-description: MyHealthTeams is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/myhealthteams.png
+name: MyHealthTeam
+description: >-
+  MyHealthTeam operates condition-specific patient social networks that connect roughly 4
+  million members across 80+ chronic-condition communities (from multiple sclerosis and
+  rheumatoid arthritis to autism and cancer) with peer support, practical advice, and trusted
+  health information to help them better manage life with a chronic condition. It is a
+  consumer-facing web and mobile platform rather than a developer-oriented API provider; as of
+  January 2025 MyHealthTeam is a Swoop company. This API Evangelist profile was surfaced as a
+  500 Global portfolio company. Enrichment found no public developer API, developer portal,
+  OpenAPI, SDKs, or /.well-known discovery surface on myhealthteam.com — only the consumer
+  marketing site (which now redirects its blog to swoop.com), so this entry carries identity
+  and domain-security signal only.
 url: https://raw.githubusercontent.com/api-evangelist/myhealthteams/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Health
+- Healthcare
+- Chronic Conditions
+- Patient Community
+- Social Network
+- Digital Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/myhealthteams-domain-security.yml
 - type: Website
-  url: https://myhealthteam.com
+  url: https://www.myhealthteam.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
